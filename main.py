@@ -26,5 +26,6 @@ async def on_message(message):
         print("reloading Voting")
         client.reload_extension('Voting')
 
+client.load_extension('AdminCogs')
 client.load_extension('Voting')
 client.run(os.getenv('discord_bot'))
